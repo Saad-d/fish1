@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-02 22:09:33.255192",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bazar",
+  "truck_hire",
+  "column_break_csji",
+  "self_trip",
+  "workman"
+ ],
+ "fields": [
+  {
+   "fieldname": "bazar",
+   "fieldtype": "Currency",
+   "label": "Bazar "
+  },
+  {
+   "fieldname": "truck_hire",
+   "fieldtype": "Currency",
+   "label": "Truck Hire "
+  },
+  {
+   "fieldname": "column_break_csji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "self_trip",
+   "fieldtype": "Currency",
+   "label": "Self Trip/"
+  },
+  {
+   "fieldname": "workman",
+   "fieldtype": "Currency",
+   "label": "Workman "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-02 22:21:06.536886",
+ "modified_by": "Administrator",
+ "module": "Fish",
+ "name": "Expenses",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

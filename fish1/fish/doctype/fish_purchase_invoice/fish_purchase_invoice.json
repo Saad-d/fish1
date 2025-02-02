@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-29 17:50:57.353410",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_jndq",
+  "amended_from",
+  "section_break_qwmn",
+  "supplier",
+  "previous_bill_no",
+  "balance",
+  "column_break_ugny",
+  "date",
+  "posting_time",
+  "column_break_owcw",
+  "section_break_ipuj",
+  "table_alsd",
+  "section_break_pqhm",
+  "column_break_glmj",
+  "total",
+  "column_break_ytjt",
+  "column_break_uzkc",
+  "section_break_axfn",
+  "table_sovl",
+  "section_break_monf",
+  "total_expenses",
+  "column_break_gvfl",
+  "net_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_jndq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fish Purchase Invoice",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_alsd",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Purchase Invoice Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "section_break_ipuj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_pqhm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "previous_bill_no",
+   "fieldtype": "Data",
+   "label": "Previous Bill No."
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance "
+  },
+  {
+   "fieldname": "section_break_qwmn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "length": 1,
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ugny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "label": "Posting Time"
+  },
+  {
+   "fieldname": "column_break_glmj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_axfn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_sovl",
+   "fieldtype": "Table",
+   "label": "Expenses ",
+   "options": "Expenses",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_expenses",
+   "fieldtype": "Currency",
+   "label": "Total Expenses"
+  },
+  {
+   "fieldname": "column_break_owcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ytjt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uzkc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_monf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_gvfl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Currency",
+   "label": "Net Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-02 22:19:57.639454",
+ "modified_by": "Administrator",
+ "module": "Fish",
+ "name": "Fish Purchase Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
