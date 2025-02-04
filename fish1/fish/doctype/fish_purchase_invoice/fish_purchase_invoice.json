@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-01-29 17:50:57.353410",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,24 +11,34 @@
   "section_break_qwmn",
   "supplier",
   "previous_bill_no",
+  "column_break_iywh",
+  "naming_series",
   "balance",
-  "column_break_ugny",
+  "column_break_owcw",
   "date",
   "posting_time",
-  "column_break_owcw",
   "section_break_ipuj",
   "table_alsd",
   "section_break_pqhm",
   "column_break_glmj",
-  "total",
   "column_break_ytjt",
   "column_break_uzkc",
+  "net_total",
   "section_break_axfn",
   "table_sovl",
   "section_break_monf",
-  "total_expenses",
+  "column_break_mfgy",
   "column_break_gvfl",
-  "net_total"
+  "column_break_xnfu",
+  "total_expenses",
+  "section_break_ykip",
+  "payments",
+  "section_break_rkyi",
+  "column_break_thkb",
+  "column_break_uqch",
+  "column_break_ukgj",
+  "total_payments",
+  "your_balance"
  ],
  "fields": [
   {
@@ -49,14 +60,7 @@
    "fieldname": "table_alsd",
    "fieldtype": "Table",
    "label": "Items",
-   "options": "Purchase Invoice Item",
-   "reqd": 1
-  },
-  {
-   "fieldname": "total",
-   "fieldtype": "Currency",
-   "in_list_view": 1,
-   "label": "Total"
+   "options": "Purchase Invoice Item"
   },
   {
    "fieldname": "section_break_ipuj",
@@ -74,7 +78,7 @@
   {
    "fieldname": "balance",
    "fieldtype": "Currency",
-   "label": "Balance "
+   "label": " Previous Balance "
   },
   {
    "fieldname": "section_break_qwmn",
@@ -83,14 +87,10 @@
   {
    "fieldname": "supplier",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Supplier",
-   "length": 1,
    "options": "Supplier",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_ugny",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "date",
@@ -120,7 +120,7 @@
   {
    "fieldname": "total_expenses",
    "fieldtype": "Currency",
-   "label": "Total Expenses"
+   "label": "Total Expenses Amt"
   },
   {
    "fieldname": "column_break_owcw",
@@ -143,18 +143,74 @@
    "fieldtype": "Column Break"
   },
   {
+   "fieldname": "column_break_xnfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ykip",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments ",
+   "options": "Payments",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_payments",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "column_break_mfgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rkyi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_thkb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uqch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ukgj",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "net_total",
    "fieldtype": "Currency",
-   "label": "Net Total"
+   "label": "Net Total "
+  },
+  {
+   "fieldname": "your_balance",
+   "fieldtype": "Currency",
+   "label": "Your Balance"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series ",
+   "options": "ACC-PINV-.YYYY.-\nACC-PINV-RET-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_iywh",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-02 22:19:57.639454",
+ "modified": "2025-02-04 16:15:55.195035",
  "modified_by": "Administrator",
  "module": "Fish",
  "name": "Fish Purchase Invoice",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

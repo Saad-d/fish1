@@ -1,38 +1,38 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-02-02 22:09:33.255192",
+ "creation": "2025-02-02 22:30:46.777061",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "expense",
-  "column_break_csji",
-  "rupee"
+  "payment_methods",
+  "column_break_kfil",
+  "rupes"
  ],
  "fields": [
   {
-   "fieldname": "column_break_csji",
+   "fieldname": "column_break_kfil",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "rupee",
-   "fieldtype": "Currency",
-   "label": "Rupee"
+   "fieldname": "payment_methods",
+   "fieldtype": "Data",
+   "label": "Payment Methods"
   },
   {
-   "fieldname": "expense",
-   "fieldtype": "Data",
-   "label": "Expense"
+   "fieldname": "rupes",
+   "fieldtype": "Currency",
+   "label": "Rupee"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-02-04 16:10:30.203151",
+ "modified": "2025-02-04 16:04:08.898661",
  "modified_by": "Administrator",
  "module": "Fish",
- "name": "Expenses",
+ "name": "Payments",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
