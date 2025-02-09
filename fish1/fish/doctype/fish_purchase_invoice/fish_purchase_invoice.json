@@ -26,18 +26,18 @@
   "net_total",
   "section_break_axfn",
   "table_sovl",
-  "section_break_monf",
-  "column_break_mfgy",
-  "column_break_gvfl",
-  "column_break_xnfu",
   "total_expenses",
-  "section_break_ykip",
+  "column_break_itpo",
   "payments",
+  "total_payments",
+  "section_break_ykip",
+  "column_break_xhce",
+  "column_break_nugb",
+  "grand_total",
   "section_break_rkyi",
   "column_break_thkb",
   "column_break_uqch",
   "column_break_ukgj",
-  "total_payments",
   "your_balance"
  ],
  "fields": [
@@ -95,6 +95,7 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date"
   },
   {
@@ -120,7 +121,7 @@
   {
    "fieldname": "total_expenses",
    "fieldtype": "Currency",
-   "label": "Total Expenses Amt"
+   "label": "Total Expenses Amount"
   },
   {
    "fieldname": "column_break_owcw",
@@ -132,18 +133,6 @@
   },
   {
    "fieldname": "column_break_uzkc",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_monf",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_gvfl",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_xnfu",
    "fieldtype": "Column Break"
   },
   {
@@ -160,11 +149,7 @@
   {
    "fieldname": "total_payments",
    "fieldtype": "Currency",
-   "label": "Grand Total"
-  },
-  {
-   "fieldname": "column_break_mfgy",
-   "fieldtype": "Column Break"
+   "label": "Total Payment Amount"
   },
   {
    "fieldname": "section_break_rkyi",
@@ -201,12 +186,29 @@
   {
    "fieldname": "column_break_iywh",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_itpo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xhce",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nugb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-04 16:15:55.195035",
+ "modified": "2025-02-09 10:49:11.163832",
  "modified_by": "Administrator",
  "module": "Fish",
  "name": "Fish Purchase Invoice",
