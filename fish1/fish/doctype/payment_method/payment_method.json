@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:payment_method",
  "creation": "2025-02-09 11:02:37.845316",
@@ -7,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "payment_method",
-  "description"
+  "description",
+  "is_published",
+  "route"
  ],
  "fields": [
   {
@@ -20,11 +23,24 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2025-02-09 11:05:28.633459",
+ "modified": "2025-02-15 12:21:52.658274",
  "modified_by": "Administrator",
  "module": "Fish",
  "name": "Payment Method",
@@ -44,6 +60,7 @@
    "write": 1
   }
  ],
+ "route": "methods",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

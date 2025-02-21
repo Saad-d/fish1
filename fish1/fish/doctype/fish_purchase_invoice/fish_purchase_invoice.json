@@ -24,6 +24,7 @@
   "column_break_ytjt",
   "column_break_uzkc",
   "net_total",
+  "net_total_amount",
   "section_break_axfn",
   "table_sovl",
   "total_expenses",
@@ -36,6 +37,7 @@
   "grand_total",
   "section_break_rkyi",
   "column_break_thkb",
+  "aadhar",
   "column_break_uqch",
   "column_break_ukgj",
   "your_balance"
@@ -60,7 +62,8 @@
    "fieldname": "table_alsd",
    "fieldtype": "Table",
    "label": "Items",
-   "options": "Purchase Invoice Item"
+   "options": "Purchase Invoice Item",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_ipuj",
@@ -121,7 +124,8 @@
   {
    "fieldname": "total_expenses",
    "fieldtype": "Currency",
-   "label": "Total Expenses Amount"
+   "label": "Total Expenses Amount",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_owcw",
@@ -149,7 +153,8 @@
   {
    "fieldname": "total_payments",
    "fieldtype": "Currency",
-   "label": "Total Payment Amount"
+   "label": "Total Payment Amount",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_rkyi",
@@ -170,12 +175,14 @@
   {
    "fieldname": "net_total",
    "fieldtype": "Currency",
-   "label": "Net Total "
+   "label": "Total Item Amount ",
+   "read_only": 1
   },
   {
    "fieldname": "your_balance",
    "fieldtype": "Currency",
-   "label": "Your Balance"
+   "label": "Your Balance",
+   "read_only": 1
   },
   {
    "fieldname": "naming_series",
@@ -202,13 +209,25 @@
   {
    "fieldname": "grand_total",
    "fieldtype": "Currency",
-   "label": "Grand Total"
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_total_amount",
+   "fieldtype": "Currency",
+   "label": "Net Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "aadhar",
+   "fieldtype": "Attach",
+   "label": "Aadhar"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-09 10:49:11.163832",
+ "modified": "2025-02-18 12:07:42.102938",
  "modified_by": "Administrator",
  "module": "Fish",
  "name": "Fish Purchase Invoice",
